@@ -1,3 +1,3 @@
 leetcode source repository
 
-<a href="leetcode.com">leetcode.com</a>
+<a href="http://leetcode.com">leetcode.com</a>
