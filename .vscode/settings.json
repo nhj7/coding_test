@@ -3,6 +3,7 @@
         "**/bin": true
     },
     "files.exclude": {
+        "**/.git": false,
         "**/bin": true
     }
 }
