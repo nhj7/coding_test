@@ -31,6 +31,10 @@ public class Solution_1021 {
 		return sb.toString();
 	}	
 	public static void main(String[] args) {		
-		System.out.println(new Solution_1021().removeOuterParentheses("()()()()(())"));		
+		System.out.println(new Solution_1021().removeOuterParentheses("()()()()(())"));
+
+
+		
+
 	}
 }
