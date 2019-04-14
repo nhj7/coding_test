@@ -50,9 +50,8 @@ public class Solution {
     	while( ln != null ){
     		System.out.println(ln.val);
     		ln = ln.next;
-		}
-		
-		
+		}	
+
 	}
 }
 
