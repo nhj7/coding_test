@@ -1,4 +1,4 @@
-package problems.n2.Add_Two_Numbers;
+package com.leetcode.problems.n2.Add_Two_Numbers;
 
 /**
  * Definition for singly-linked list.
