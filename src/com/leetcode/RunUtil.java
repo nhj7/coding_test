@@ -12,13 +12,11 @@ public class RunUtil {
         if (input.length() == 0) {
             return null;
         }
-
         String[] parts = input.split(",");
         String item = parts[0];
         TreeNode root = new TreeNode(Integer.parseInt(item));
         Queue<TreeNode> nodeQueue = new LinkedList<>();
         nodeQueue.add(root);
-
         int index = 1;
         while(!nodeQueue.isEmpty()) {
             TreeNode node = nodeQueue.remove();
