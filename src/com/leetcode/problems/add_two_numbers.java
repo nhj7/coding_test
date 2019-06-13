@@ -1,4 +1,4 @@
-package com.leetcode.problems.n2.Add_Two_Numbers;
+package com.leetcode.problems;
 
 /**
  * Definition for singly-linked list.
@@ -8,7 +8,7 @@ package com.leetcode.problems.n2.Add_Two_Numbers;
  *     ListNode(int x) { val = x; }
  * }
  */
-public class Solution {
+public class add_two_numbers {
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
     	ListNode resultNode = null;
     	ListNode nextNode = null;
