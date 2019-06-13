@@ -42,10 +42,5 @@ Note that an empty tree is represented by NULL, therefore you would see the expe
     }
 }
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-    TreeNode(int x) { val = x; }
-}
+
 
