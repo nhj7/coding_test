@@ -6,7 +6,7 @@ import java.util.List;
 public class test {
 	public static void main(String[] args) {
 		
-		List a = new ArrayList();
+		List<String> a = new ArrayList<String>();
 		a.add("a");
 		a.add("a");
 		a.add("b");
