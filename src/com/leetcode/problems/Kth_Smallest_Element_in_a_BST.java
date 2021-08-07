@@ -2,8 +2,6 @@ package com.leetcode.problems;
 
 import com.leetcode.RunUtil;
 
-import java.util.*;
-
 
 public class Kth_Smallest_Element_in_a_BST {
     /*

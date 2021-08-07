@@ -12,12 +12,9 @@ public class test {
 		a.add("b");
 		a.add("c");
 		
-		List b = new ArrayList();
+		List<String> b = new ArrayList<String>();
 		b.add("a");
 		b.add("a");
 		b.add("c");
-		
-		List unionAll = new ArrayList();
-		//for(int i = 0; i < a.size())
 	}
 }

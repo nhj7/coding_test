@@ -9,17 +9,17 @@ import java.util.List;
  */
 public class ShuttleBus {
     public static void getBoardingPossibleLastestTime(int n, int t, int m, String[] timeTable) {
-        List listTimeTable = new ArrayList();
+        List<String> listTimeTable = new ArrayList<String>();
         for (int i = 0; i < timeTable.length; i++) {
             listTimeTable.add(timeTable[i]);
         }
         Collections.sort(listTimeTable);
         String busStopTime = "09:00";
-        List boardingCrew = new ArrayList();        
+        List<String> boardingCrew = new ArrayList<String>();        
         String boardingPossibleLastestTime = busStopTime;
         for(int i = 0; i < n;i++){
             int i_busStopTime = Integer.parseInt(busStopTime.replace(":", ""));
-            for(Iterator it = listTimeTable.iterator(); it.hasNext();  ){
+            for(Iterator<String> it = listTimeTable.iterator(); it.hasNext();  ){
                 String crew_on_time = it.next().toString();
                 int i_TimeTable = Integer.parseInt(crew_on_time.replace(":", ""));
                 if( i_busStopTime >= i_TimeTable ){

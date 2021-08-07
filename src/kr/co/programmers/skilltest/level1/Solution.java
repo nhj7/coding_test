@@ -28,17 +28,17 @@ public class Solution {
     
     public static int p3(int n, int[] lost, int[] reserve) {
     	Arrays.sort(lost); Arrays.sort(reserve);
-    	List listLost = new ArrayList();
+    	List<String> listLost = new ArrayList<String>();
     	for(int i = 0; i < lost.length;i++) {
     		listLost.add(String.valueOf(lost[i]));    	
     	}
-    	List listReserve = new ArrayList();
+    	List<String> listReserve = new ArrayList<String>();
     	for(int i = 0; i < reserve.length;i++) {
     		if( !listLost.contains(String.valueOf(reserve[i]))) {
     			listReserve.add(String.valueOf(reserve[i]));
     		}    			
     	}    	
-    	for(Iterator it = listReserve.iterator();it.hasNext();) {
+    	for(Iterator<String> it = listReserve.iterator();it.hasNext();) {
     		//System.out.println("listLost : "+listLost);
     		//System.out.println("listReserve : "+listReserve);
     		Object key = it.next();

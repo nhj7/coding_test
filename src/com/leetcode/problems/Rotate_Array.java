@@ -6,7 +6,6 @@ public class Rotate_Array {
     public void rotate(int[] nums, int k) {
         if( k == 0 || nums.length < 2 ) return;
         int[] newNums = new int[nums.length];
-        int maxLen = nums.length-1;
         for(int i = nums.length-1 ; i >= 0 ; i-- ){
             int newIdx = i + k >= nums.length ? (i + k) % nums.length : i + k ;
             newNums[newIdx] = nums[i];

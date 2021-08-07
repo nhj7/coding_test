@@ -10,7 +10,7 @@ public class RuntimeCalc {
 
 
     public static int getRuntime( int cacheSize, String[] cities ){
-        LRUCache lc = new LRUCache(cacheSize);
+        LRUCache<String, String> lc = new LRUCache<String, String>(cacheSize);
         int runTime = 0;
         for(int i = 0; i < cities.length;i++){
           String city = cities[i].toLowerCase();
@@ -79,7 +79,7 @@ class LRUCache<K, V> extends LinkedHashMap<K, V> {
 
     
     public static void testLRUCache() {
-      LRUCache lc = new LRUCache(3);
+      LRUCache<String, String> lc = new LRUCache<String, String>(3);
         lc.put("a", "1");
         lc.put("b", "2");
         lc.put("c", "3");

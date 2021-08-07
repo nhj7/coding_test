@@ -46,7 +46,7 @@ public class Longest_Palindromic_Substring  {
     }
 
     public void getPalindrome(char[] arrChar, int left, int right){
-        for(int j = 1 ; left-1 >= 0 && right+1 < arrChar.length ;j++){
+        for(; left-1 >= 0 && right+1 < arrChar.length ;){
             if( arrChar[left-1] == arrChar[right+1] ){
                 left--;
                 right++;

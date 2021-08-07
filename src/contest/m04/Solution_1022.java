@@ -13,9 +13,6 @@ public class Solution_1022 {
 	
 	public static void main(String[] args) {
 		
-		int[] input = new int[]{1,0,1,0,1,0,1};		
-		TreeNode rootNode = new TreeNode(input[0]);
-		TreeNode node = rootNode;
 		System.out.println(Math.pow(2, 3));
 		System.out.println( 8 ^ 2 );
 	}

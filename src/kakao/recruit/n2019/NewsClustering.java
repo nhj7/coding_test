@@ -11,13 +11,13 @@ public class NewsClustering {
 		System.out.println("kakao news clustering : ["+ str1+ "], ["+str2+"]");		
 		char[] arrChar1 = str1.toLowerCase().toCharArray();
 		char[] arrChar2 = str2.toLowerCase().toCharArray();
-		List listStr1 = getCharList(arrChar1);
-		List listStr2 = getCharList(arrChar2);		
+		List<String> listStr1 = getCharList(arrChar1);
+		List<String> listStr2 = getCharList(arrChar2);		
 		System.out.println("listStr1 : "+listStr1);
 		System.out.println("listStr2 : "+listStr2);		
-		List unionAll = new ArrayList();
-		List interSection = new ArrayList();
-		for(Iterator it = listStr1.iterator();it.hasNext();) {
+		List<String> unionAll = new ArrayList<String>();
+		List<String> interSection = new ArrayList<String>();
+		for(Iterator<String> it = listStr1.iterator();it.hasNext();) {
 			String item = it.next().toString();
 			unionAll.add(item);
 			it.remove();
@@ -25,7 +25,7 @@ public class NewsClustering {
 				interSection.add(listStr2.remove(listStr2.indexOf(item)));
 			}
 		}		
-		for(Iterator it = listStr2.iterator();it.hasNext();) {
+		for(Iterator<String> it = listStr2.iterator();it.hasNext();) {
 			String item = it.next().toString();
 			unionAll.add(item);
 		}
@@ -42,8 +42,8 @@ public class NewsClustering {
 		System.out.println("========================================================");
 		System.out.println();
 	}	
-	public static List getCharList( char[] arrChar ) {
-		List listStr = new ArrayList();
+	public static List<String> getCharList( char[] arrChar ) {
+		List<String> listStr = new ArrayList<String>();
 		for(int i = 0; i < arrChar.length-1;i++) {
 			String tmpItem = String.valueOf(arrChar[i]) + String.valueOf(arrChar[i+1]);
 			//if( Pattern.matches("[a-z]{2}", tmpItem)) {
