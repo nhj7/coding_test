@@ -4,9 +4,9 @@ import java.util.*;
 
 public class test {
     public static void main(String[] args) {
-        Map m = new HashMap<String, String>();
+        Map<String, Object> m = new HashMap<String, Object>();
         m.put("aaaaa.tif",new Object[]{1, "c:/edms_path/aaaa.tif"});
-        m.put(222,"3434343");
+        m.put("222","3434343");
         Integer[] arrKey = new Integer[m.size()];
         m.keySet().toArray(arrKey);
         System.out.println(arrKey[0]);
@@ -15,10 +15,7 @@ public class test {
         m.values().toArray(arrValue);
         System.out.println(arrValue[0]);
 
-        List list = new ArrayList();
-
+        //List list = new ArrayList();
         //list.contains();
-
-
     }
 }
