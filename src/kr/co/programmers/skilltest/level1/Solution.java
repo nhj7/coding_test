@@ -91,7 +91,7 @@ public class Solution {
     }
     
     public static void main(String[] args) {
-		//solution(626331);
+		solution(626331);
     	
     	//p2("bcdZefg");
     	
